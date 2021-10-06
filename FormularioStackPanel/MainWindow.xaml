@@ -9,7 +9,7 @@
         Title="Formularios StackPanel" Height="450" Width="740" MaxWidth="900" MinWidth="400">
     <Grid>
         <StackPanel>
-            <StackPanel HorizontalAlignment="Stretch"  Orientation="Vertical" Margin="10" Height="70px">
+            <StackPanel HorizontalAlignment="Stretch"  Orientation="Vertical" Margin="10">
                 <StackPanel.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF0E8906" Offset="0"/>
@@ -17,10 +17,10 @@
                     </LinearGradientBrush>
                 </StackPanel.Background>
                 <Label HorizontalAlignment="Left" FontWeight="Bold" FontSize="16">Nombre</Label>
-                <TextBox Margin="5,0"></TextBox>
+                <TextBox Margin="5,0,5,20"></TextBox>
             </StackPanel>
 
-            <StackPanel HorizontalAlignment="Stretch"  Orientation="Vertical" Margin="10" Height="70px">
+            <StackPanel HorizontalAlignment="Stretch"  Orientation="Vertical" Margin="10">
                 <StackPanel.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF59A6F9" Offset="0"/>
@@ -28,10 +28,10 @@
                     </LinearGradientBrush>
                 </StackPanel.Background>
                 <Label HorizontalAlignment="Left" FontWeight="Bold" FontSize="16">Dirección</Label>
-                <TextBox Margin="5,0"></TextBox>
+                <TextBox Margin="5,0,5,20"></TextBox>
             </StackPanel>
 
-            <StackPanel HorizontalAlignment="Stretch"  Orientation="Vertical" Margin="10" Height="70px">
+            <StackPanel HorizontalAlignment="Stretch"  Orientation="Vertical" Margin="10">
                 <StackPanel.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FFF95992" Offset="0"/>
@@ -39,7 +39,7 @@
                     </LinearGradientBrush>
                 </StackPanel.Background>
                 <Label HorizontalAlignment="Left" FontWeight="Bold" FontSize="16">Correo electrónico</Label>
-                <TextBox Margin="5,0" Width="600" HorizontalAlignment="Left"></TextBox>
+                <TextBox Margin="5,0,5,20" Width="600" HorizontalAlignment="Left"></TextBox>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
