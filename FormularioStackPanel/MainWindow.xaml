@@ -7,39 +7,58 @@
         mc:Ignorable="d"
         Icon="img/form.ico"
         Title="Formularios StackPanel" Height="450" Width="740" MaxWidth="900" MinWidth="400">
+
+    <Window.Resources>
+        <Style TargetType="{x:Type StackPanel}" x:Key="VerticalStrech">
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="Orientation" Value="Vertical"/>
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="5,0,5,20"/>
+        </Style>
+    </Window.Resources>
+    
     <Grid>
         <StackPanel>
-            <StackPanel HorizontalAlignment="Stretch"  Orientation="Vertical" Margin="10">
+            <StackPanel Style="{StaticResource VerticalStrech}">
                 <StackPanel.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF0E8906" Offset="0"/>
                         <GradientStop Color="White" Offset="1"/>
                     </LinearGradientBrush>
                 </StackPanel.Background>
-                <Label HorizontalAlignment="Left" FontWeight="Bold" FontSize="16">Nombre</Label>
-                <TextBox Margin="5,0,5,20"></TextBox>
+                <Label>Nombre</Label>
+                <TextBox></TextBox>
             </StackPanel>
 
-            <StackPanel HorizontalAlignment="Stretch"  Orientation="Vertical" Margin="10">
+            <StackPanel Style="{StaticResource VerticalStrech}">
                 <StackPanel.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF59A6F9" Offset="0"/>
                         <GradientStop Color="White" Offset="1"/>
                     </LinearGradientBrush>
                 </StackPanel.Background>
-                <Label HorizontalAlignment="Left" FontWeight="Bold" FontSize="16">Dirección</Label>
-                <TextBox Margin="5,0,5,20"></TextBox>
+                <Label>Dirección</Label>
+                <TextBox></TextBox>
             </StackPanel>
 
-            <StackPanel HorizontalAlignment="Stretch"  Orientation="Vertical" Margin="10">
+            <StackPanel Style="{StaticResource VerticalStrech}">
                 <StackPanel.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FFF95992" Offset="0"/>
                         <GradientStop Color="White" Offset="1"/>
                     </LinearGradientBrush>
                 </StackPanel.Background>
-                <Label HorizontalAlignment="Left" FontWeight="Bold" FontSize="16">Correo electrónico</Label>
-                <TextBox Margin="5,0,5,20" Width="600" HorizontalAlignment="Left"></TextBox>
+                <Label>Correo electrónico</Label>
+                <TextBox Width="600" HorizontalAlignment="Left"></TextBox>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
