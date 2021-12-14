@@ -1,0 +1,10 @@
+1. Diseñar un formulario para introducir los datos de una persona (nombre,
+dirección y correo electrónico) siguiendo las siguientes indicaciones:
+• Únicamente se puede utilizar paneles de tipo StackPanel.
+• La interfaz debe comportarse al redimensionar la ventana como en el
+ejecutable suministrado.
+• Se pueden elegir otro colores, pero sí deberá utilizarse degradado en los tres
+campos.
+• Los textos tienen un tamaño de fuente de 16 y están en negrita.
+• Los botones tienen un ancho de 100.
+Nombre del proyecto: FormularioStackPanel
